@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <meta name="description" content="LAION-BVD Dataset Versions — Download links for all dataset variants">
+    <title>Download — LAION Big Video Dataset</title>
+    <link rel="icon" type="image/png" href="logos/logo-128.png">
+    <link rel="apple-touch-icon" href="logos/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ── Navbar ─────────────────────────────────── -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="logos/logo-128.png" alt="LAION BVD" class="nav-logo">
+                <span class="nav-wordmark">LAION-BVD</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#abstract"  class="nav-link">Abstract</a></li>
+                <li><a href="index.html#scale"   class="nav-link">Dataset</a></li>
+                <li><a href="index.html#results"   class="nav-link">Results</a></li>
+                <li><a href="index.html#citation"  class="nav-link">Citation</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-ghost">Paper</a>
+                <a href="download.html" class="btn btn-primary">Dataset&nbsp;↓</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ── Page Header ──────────────────────────────── -->
+    <section class="dl-hero">
+        <div class="dl-hero-glow"></div>
+        <div class="container">
+            <a href="index.html" class="dl-back">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                Back to overview
+            </a>
+            <p class="section-eyebrow" style="margin-top: 20px;">Open Access</p>
+            <h1 class="dl-title">Dataset Versions</h1>
+            <p class="dl-subtitle">All versions of LAION-BVD are freely available on Hugging Face.<br>Choose the subset that fits your research needs.</p>
+        </div>
+    </section>
+
+    <!-- ── Curation Pipeline ────────────────────────── -->
+    <!-- <section class="abstract-section" style="padding-top: 3rem; padding-bottom: 1rem;">
+        <div class="container">
+            <p class="section-eyebrow">Pipeline</p>
+            <h2 class="section-title">Curation Pipeline</h2>
+            <div class="reveal-up" style="text-align:center; margin-top:2rem;">
+                <img src="images/data_curation3.svg" alt="LAION-BVD data curation pipeline" style="max-width:100%; height:auto;">
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ── Dataset Groups ────────────────────────────── -->
+    <main class="dl-main">
+        <div class="container">
+
+            <div class="dl-groups-grid">
+
+            <!-- URL-only variants -->
+            <div class="dl-group reveal-up">
+                <div class="dl-group-header">
+                    <span class="dl-group-icon dl-group-icon--url">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                    </span>
+                    <div>
+                        <h2 class="dl-group-title">URL-only Variants</h2>
+                        <p class="dl-group-desc">Lightweight metadata-only versions — no media files, just URLs and additional metadata</p>
+                    </div>
+                </div>
+                <div class="dl-cards">
+
+                    <div class="dl-card reveal-up">
+                        <div class="dl-card-left">
+                            <div class="dl-badge dl-badge--url">URLs</div>
+                            <h3 class="dl-card-name">BVD-URLs</h3>
+                            <p class="dl-card-desc">The full 1.3B extracted platform-specific URLs from CommonCrawl. The foundation of the entire LAION-BVD collection.</p>
+                            <div class="dl-card-meta">
+                                <span class="dl-meta-chip">1.3B URLs</span>
+                                <span class="dl-meta-chip">CommonCrawl</span>
+                            </div>
+                        </div>
+                        <a href="https://huggingface.co/datasets/laion/BVD-URLs" target="_blank" rel="noopener noreferrer" class="btn btn-hf">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.53 2.93a.75.75 0 0 0-1.06 0L2.22 5.19a.75.75 0 0 0 1.06 1.06l.47-.47V9a.75.75 0 0 0 1.5 0V5.78l.47.47a.75.75 0 0 0 1.06-1.06L5.53 2.93ZM12 3.75a.75.75 0 0 1 .75.75v1.5h1.5a.75.75 0 0 1 0 1.5h-1.5V9a.75.75 0 0 1-1.5 0V7.5H9.75a.75.75 0 0 1 0-1.5h1.5V4.5A.75.75 0 0 1 12 3.75ZM3 13.5a9 9 0 1 1 18 0 9 9 0 0 1-18 0Zm9-7.5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15Z"/></svg>
+                            Hugging Face
+                        </a>
+                    </div>
+
+                    <div class="dl-card reveal-up delay-1">
+                        <div class="dl-card-left">
+                            <div class="dl-badge dl-badge--url">URLs</div>
+                            <h3 class="dl-card-name">BVD-V-55M-URLs</h3>
+                            <p class="dl-card-desc">URL-only version of BVD-V-55M with additional metadata on the 2.4M source videos.</p>
+                            <div class="dl-card-meta">
+                                <span class="dl-meta-chip">55M entries</span>
+                                <span class="dl-meta-chip">Video metadata</span>
+                            </div>
+                        </div>
+                        <a href="https://huggingface.co/datasets/laion/BVD-V-55M-URLs" target="_blank" rel="noopener noreferrer" class="btn btn-hf">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.53 2.93a.75.75 0 0 0-1.06 0L2.22 5.19a.75.75 0 0 0 1.06 1.06l.47-.47V9a.75.75 0 0 0 1.5 0V5.78l.47.47a.75.75 0 0 0 1.06-1.06L5.53 2.93ZM12 3.75a.75.75 0 0 1 .75.75v1.5h1.5a.75.75 0 0 1 0 1.5h-1.5V9a.75.75 0 0 1-1.5 0V7.5H9.75a.75.75 0 0 1 0-1.5h1.5V4.5A.75.75 0 0 1 12 3.75ZM3 13.5a9 9 0 1 1 18 0 9 9 0 0 1-18 0Zm9-7.5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15Z"/></svg>
+                            Hugging Face
+                        </a>
+                    </div>
+
+                    <div class="dl-card reveal-up delay-1">
+                        <div class="dl-card-left">
+                            <div class="dl-badge dl-badge--url">URLs</div>
+                            <h3 class="dl-card-name">BVD-A-1.7M-URLs</h3>
+                            <p class="dl-card-desc">URL-only version of BVD-A-1.7M for lightweight access to the unique-source audio subset.</p>
+                            <div class="dl-card-meta">
+                                <span class="dl-meta-chip">1.7M entries</span>
+                                <span class="dl-meta-chip">Audio metadata</span>
+                            </div>
+                        </div>
+                        <a href="https://huggingface.co/datasets/laion/BVD-A-1.7M-URLs" class="btn btn-hf">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.53 2.93a.75.75 0 0 0-1.06 0L2.22 5.19a.75.75 0 0 0 1.06 1.06l.47-.47V9a.75.75 0 0 0 1.5 0V5.78l.47.47a.75.75 0 0 0 1.06-1.06L5.53 2.93ZM12 3.75a.75.75 0 0 1 .75.75v1.5h1.5a.75.75 0 0 1 0 1.5h-1.5V9a.75.75 0 0 1-1.5 0V7.5H9.75a.75.75 0 0 1 0-1.5h1.5V4.5A.75.75 0 0 1 12 3.75ZM3 13.5a9 9 0 1 1 18 0 9 9 0 0 1-18 0Zm9-7.5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15Z"/></svg>
+                            Hugging Face
+                        </a>
+                    </div>
+
+                    <div class="dl-card reveal-up delay-2">
+                        <div class="dl-card-left">
+                            <div class="dl-badge dl-badge--url">URLs</div>
+                            <h3 class="dl-card-name">BVD-A-10M-URLs</h3>
+                            <p class="dl-card-desc">URL-only version of BVD-A-10M for lightweight access to the large-scale audio sample.</p>
+                            <div class="dl-card-meta">
+                                <span class="dl-meta-chip">10M entries</span>
+                                <span class="dl-meta-chip">Audio metadata</span>
+                            </div>
+                        </div>
+                        <a href="https://huggingface.co/datasets/laion/BVD-A-10M-URLs" class="btn btn-hf">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.53 2.93a.75.75 0 0 0-1.06 0L2.22 5.19a.75.75 0 0 0 1.06 1.06l.47-.47V9a.75.75 0 0 0 1.5 0V5.78l.47.47a.75.75 0 0 0 1.06-1.06L5.53 2.93ZM12 3.75a.75.75 0 0 1 .75.75v1.5h1.5a.75.75 0 0 1 0 1.5h-1.5V9a.75.75 0 0 1-1.5 0V7.5H9.75a.75.75 0 0 1 0-1.5h1.5V4.5A.75.75 0 0 1 12 3.75ZM3 13.5a9 9 0 1 1 18 0 9 9 0 0 1-18 0Zm9-7.5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15Z"/></svg>
+                            Hugging Face
+                        </a>
+                    </div>
+
+                    <div class="dl-card reveal-up delay-3">
+                        <div class="dl-card-left">
+                            <div class="dl-badge dl-badge--url">URLs</div>
+                            <h3 class="dl-card-name">BVD-I-300M-URLs</h3>
+                            <p class="dl-card-desc">URL-only version of BVD-I-300M for lightweight access to the large-scale image frame collection.</p>
+                            <div class="dl-card-meta">
+                                <span class="dl-meta-chip">300M entries</span>
+                                <span class="dl-meta-chip">Frame metadata</span>
+                            </div>
+                        </div>
+                        <a href="https://huggingface.co/datasets/laion/BVD-I-300M-URLs" class="btn btn-hf">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.53 2.93a.75.75 0 0 0-1.06 0L2.22 5.19a.75.75 0 0 0 1.06 1.06l.47-.47V9a.75.75 0 0 0 1.5 0V5.78l.47.47a.75.75 0 0 0 1.06-1.06L5.53 2.93ZM12 3.75a.75.75 0 0 1 .75.75v1.5h1.5a.75.75 0 0 1 0 1.5h-1.5V9a.75.75 0 0 1-1.5 0V7.5H9.75a.75.75 0 0 1 0-1.5h1.5V4.5A.75.75 0 0 1 12 3.75ZM3 13.5a9 9 0 1 1 18 0 9 9 0 0 1-18 0Zm9-7.5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15Z"/></svg>
+                            Hugging Face
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Full Collections -->
+            <div class="dl-group reveal-up">
+                <div class="dl-group-header">
+                    <span class="dl-group-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </span>
+                    <div>
+                        <h2 class="dl-group-title">Full Collections</h2>
+                        <p class="dl-group-desc">Complete datasets including raw media files</p>
+                    </div>
+                </div>
+                <div class="dl-cards">
+
+                    <div class="dl-card reveal-up">
+                        <div class="dl-card-left">
+                            <div class="dl-badge dl-badge--video">Video</div>
+                            <h3 class="dl-card-name">BVD-RAW</h3>
+                            <p class="dl-card-desc">The raw pool of 80M downloaded videos totaling 10M video hours, sourced from URLs in BVD-URLs.</p>
+                            <div class="dl-card-meta">
+                                <span class="dl-meta-chip">80M videos</span>
+                                <span class="dl-meta-chip">10M hours</span>
+                                <span class="dl-meta-chip">Research collaboration</span>
+                            </div>
+                        </div>
+                        <a href="bvd-raw-access.html" class="btn-raw">
+                            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            Request Access
+                        </a>
+                    </div>
+
+                    <div class="dl-card reveal-up delay-2">
+                        <div class="dl-card-left">
+                            <div class="dl-badge dl-badge--video">Video</div>
+                            <h3 class="dl-card-name">BVD-V-55M</h3>
+                            <p class="dl-card-desc">55M clips extracted via content-aware scene detection from a randomly sampled subset of 2.4M videos from BVD-RAW.</p>
+                            <div class="dl-card-meta">
+                                <span class="dl-meta-chip">55M clips</span>
+                                <span class="dl-meta-chip">Scene detection</span>
+                                <span class="dl-meta-chip">2.4M source videos</span>
+                            </div>
+                        </div>
+                        <a href="https://huggingface.co/datasets/laion/BVD-V-55M" target="_blank" rel="noopener noreferrer" class="btn btn-hf">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.53 2.93a.75.75 0 0 0-1.06 0L2.22 5.19a.75.75 0 0 0 1.06 1.06l.47-.47V9a.75.75 0 0 0 1.5 0V5.78l.47.47a.75.75 0 0 0 1.06-1.06L5.53 2.93ZM12 3.75a.75.75 0 0 1 .75.75v1.5h1.5a.75.75 0 0 1 0 1.5h-1.5V9a.75.75 0 0 1-1.5 0V7.5H9.75a.75.75 0 0 1 0-1.5h1.5V4.5A.75.75 0 0 1 12 3.75ZM3 13.5a9 9 0 1 1 18 0 9 9 0 0 1-18 0Zm9-7.5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15Z"/></svg>
+                            Hugging Face
+                        </a>
+                    </div>
+
+                    <div class="dl-card reveal-up delay-3">
+                        <div class="dl-card-left">
+                            <div class="dl-badge dl-badge--audio">Audio</div>
+                            <h3 class="dl-card-name">BVD-A-1.7M</h3>
+                            <p class="dl-card-desc">1.7M audio clips from BVD-V-55M, sampled for uniqueness of source videos to maximize diversity.</p>
+                            <div class="dl-card-meta">
+                                <span class="dl-meta-chip">1.7M clips</span>
+                                <span class="dl-meta-chip">Unique sources</span>
+                            </div>
+                        </div>
+                        <a href="https://huggingface.co/datasets/laion/BVD-A-1.7M" target="_blank" rel="noopener noreferrer" class="btn btn-hf">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.53 2.93a.75.75 0 0 0-1.06 0L2.22 5.19a.75.75 0 0 0 1.06 1.06l.47-.47V9a.75.75 0 0 0 1.5 0V5.78l.47.47a.75.75 0 0 0 1.06-1.06L5.53 2.93ZM12 3.75a.75.75 0 0 1 .75.75v1.5h1.5a.75.75 0 0 1 0 1.5h-1.5V9a.75.75 0 0 1-1.5 0V7.5H9.75a.75.75 0 0 1 0-1.5h1.5V4.5A.75.75 0 0 1 12 3.75ZM3 13.5a9 9 0 1 1 18 0 9 9 0 0 1-18 0Zm9-7.5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15Z"/></svg>
+                            Hugging Face
+                        </a>
+                    </div>
+
+                    <div class="dl-card reveal-up delay-4">
+                        <div class="dl-card-left">
+                            <div class="dl-badge dl-badge--audio">Audio</div>
+                            <h3 class="dl-card-name">BVD-A-10M</h3>
+                            <p class="dl-card-desc">10M audio clips randomly sampled from BVD-V-55M for large-scale audio pre-training.</p>
+                            <div class="dl-card-meta">
+                                <span class="dl-meta-chip">10M clips</span>
+                                <span class="dl-meta-chip">Random sample</span>
+                            </div>
+                        </div>
+                        <a href="https://huggingface.co/datasets/laion/BVD-A-10M" target="_blank" rel="noopener noreferrer" class="btn btn-hf">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.53 2.93a.75.75 0 0 0-1.06 0L2.22 5.19a.75.75 0 0 0 1.06 1.06l.47-.47V9a.75.75 0 0 0 1.5 0V5.78l.47.47a.75.75 0 0 0 1.06-1.06L5.53 2.93ZM12 3.75a.75.75 0 0 1 .75.75v1.5h1.5a.75.75 0 0 1 0 1.5h-1.5V9a.75.75 0 0 1-1.5 0V7.5H9.75a.75.75 0 0 1 0-1.5h1.5V4.5A.75.75 0 0 1 12 3.75ZM3 13.5a9 9 0 1 1 18 0 9 9 0 0 1-18 0Zm9-7.5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15Z"/></svg>
+                            Hugging Face
+                        </a>
+                    </div>
+
+                    <div class="dl-card reveal-up delay-5">
+                        <div class="dl-card-left">
+                            <div class="dl-badge dl-badge--image">Image</div>
+                            <h3 class="dl-card-name">BVD-I-300M</h3>
+                            <p class="dl-card-desc">300M extracted scene-changing frames randomly sampled from BVD-RAW for image-text pre-training.</p>
+                            <div class="dl-card-meta">
+                                <span class="dl-meta-chip">300M frames</span>
+                                <span class="dl-meta-chip">Scene changes</span>
+                            </div>
+                        </div>
+                        <a href="https://huggingface.co/datasets/laion/BVD-I-300M" target="_blank" rel="noopener noreferrer" class="btn btn-hf">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.53 2.93a.75.75 0 0 0-1.06 0L2.22 5.19a.75.75 0 0 0 1.06 1.06l.47-.47V9a.75.75 0 0 0 1.5 0V5.78l.47.47a.75.75 0 0 0 1.06-1.06L5.53 2.93ZM12 3.75a.75.75 0 0 1 .75.75v1.5h1.5a.75.75 0 0 1 0 1.5h-1.5V9a.75.75 0 0 1-1.5 0V7.5H9.75a.75.75 0 0 1 0-1.5h1.5V4.5A.75.75 0 0 1 12 3.75ZM3 13.5a9 9 0 1 1 18 0 9 9 0 0 1-18 0Zm9-7.5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15Z"/></svg>
+                            Hugging Face
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            </div><!-- /.dl-groups-grid -->
+
+        </div>
+    </main>
+
+    <!-- ── Footer ─────────────────────────────────── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-body">
+                <div class="footer-brand">
+                    <img src="logos/logo-128.png" alt="LAION BVD" class="footer-logo">
+                    <div>
+                        <div class="footer-name">LAION Big Video Dataset</div>
+                        <div class="footer-tagline">Open research for the community</div>
+                    </div>
+                </div>
+                <nav class="footer-links">
+                    <a href="#">Paper</a>
+                    <a href="download.html">Dataset</a>
+                    <a href="https://github.com/LAION-AI/BVD">GitHub</a>
+                    <a href="https://laion.ai">LAION e.V.</a>
+                    <a href="https://github.com/LAION-AI/BVD/blob/main/assets/bvd_privacy_policy.pdf" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                    <a href="https://github.com/LAION-AI/BVD/blob/main/assets/bvd_terms_of_use.pdf" target="_blank" rel="noopener noreferrer">Terms of Use</a>
+                </nav>
+            </div>
+            <div class="footer-rule">
+                <span>&copy; 2024 LAION e.V. Released under open access for the research community.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

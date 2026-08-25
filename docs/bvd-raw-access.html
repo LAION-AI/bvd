@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <meta name="description" content="How to access BVD-RAW — the 80M-video, 10M-hour raw pool from LAION Big Video Dataset">
+    <title>BVD-RAW Access — LAION Big Video Dataset</title>
+    <link rel="icon" type="image/png" href="logos/logo-128.png">
+    <link rel="apple-touch-icon" href="logos/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ── Navbar ─────────────────────────────────── -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="logos/logo-128.png" alt="LAION BVD" class="nav-logo">
+                <span class="nav-wordmark">LAION-BVD</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#abstract" class="nav-link">Abstract</a></li>
+                <li><a href="index.html#scale"  class="nav-link">Dataset</a></li>
+                <li><a href="index.html#results"  class="nav-link">Results</a></li>
+                <li><a href="index.html#citation" class="nav-link">Citation</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-ghost">Paper</a>
+                <a href="download.html" class="btn btn-primary">Dataset&nbsp;↓</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ── Page Header ──────────────────────────────── -->
+    <section class="dl-hero">
+        <div class="dl-hero-glow"></div>
+        <div class="container">
+            <a href="download.html" class="dl-back">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                Back to downloads
+            </a>
+            <div class="restricted-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                Research Collaboration
+            </div>
+            <h1 class="dl-title">Access BVD-RAW</h1>
+            <p class="dl-subtitle">BVD-RAW contains 80M raw videos totalling 10M hours and is available to research collaborators.<br>Follow the three steps below to request and receive the data.</p>
+        </div>
+    </section>
+
+    <!-- ── Steps ────────────────────────────────────── -->
+    <main class="access-section">
+        <div class="container">
+
+            <div class="steps-list">
+
+                <!-- ── Step 1 ── -->
+                <div class="step-card reveal-up">
+                    <div class="step-header">
+                        <div class="step-num">1</div>
+                        <div class="step-header-text">
+                            <h3>Accept the Terms of Use</h3>
+                            <p>Submit a short request so we can verify your intended use</p>
+                        </div>
+                    </div>
+                    <div class="step-body">
+                        <p>
+                            BVD-RAW is available exclusively for academic and non-commercial research. To request access,
+                            please fill in the form below. We ask for your institutional affiliation, a brief description
+                            of your research, and to accept the
+                            <a href="https://github.com/LAION-AI/BVD/blob/main/assets/bvd_terms_of_use.pdf" target="_blank" rel="noopener noreferrer" style="color:#22d3ee;">Terms of Use</a>.
+                            Requests are reviewed on a
+                            rolling basis and you will receive a confirmation once access is granted.
+                        </p>
+                        <div class="step-action">
+                            <a href="https://forms.gle/sdFsQRyRr6YAx2eJ8" target="_blank" rel="noopener noreferrer" class="btn-access">
+                                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                Open Request Form
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── Step 2 ── -->
+                <div class="step-card reveal-up delay-1">
+                    <div class="step-header">
+                        <div class="step-num">2</div>
+                        <div class="step-header-text">
+                            <h3>Create a Transfer Manifest</h3>
+                            <p>Specify which videos you need and where they should be sent</p>
+                        </div>
+                    </div>
+                    <div class="step-body">
+                        <p>
+                            Data is transferred directly to your own S3-compatible storage bucket via
+                            <a href="https://grass.io" target="_blank" rel="noopener noreferrer" style="color:#22d3ee;">GRASS</a>.
+                            You will need to create a <strong>JSONL manifest file</strong> that declares your bucket credentials
+                            and lists each video you want. Video IDs can be found in
+                            <a href="https://huggingface.co/datasets/laion/BVD-RAW-Index" target="_blank" rel="noopener noreferrer" style="color:#fcd34d;">BVD-RAW-Index</a>
+                            on Hugging Face.
+                        </p>
+
+                        <div class="step-note">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                            <span>Each JSON object in the manifest must be compacted to a <strong>single line</strong>. The examples below show pretty-printed versions for readability; the final example shows the correctly formatted JSONL file.</span>
+                        </div>
+
+                        <!-- Credentials -->
+                        <p><strong>Line 1 — S3 credentials</strong></p>
+                        <div class="code-card">
+                            <div class="code-card-header">
+                                <span class="code-lang">JSON</span>
+                                <button class="copy-btn" data-target="cred-code">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                                    Copy
+                                </button>
+                            </div>
+                            <pre class="code-pre" id="cred-code">{
+  "endpoint":    "{your-s3-compatible-endpoint}",
+  "accessKeyId": "{your-access-key-id}",
+  "secretKey":   "{your-secret-key}"
+}</pre>
+                        </div>
+
+                        <!-- Copy instruction -->
+                        <p><strong>Subsequent lines — one copy instruction per video</strong></p>
+                        <p>
+                            Each video is identified by its YouTube-style ID (e.g. <code style="font-family:monospace;color:#fcd34d;font-size:.85em;">--Uuf_zdsTk</code>).
+                            Every entry requests the <code style="font-family:monospace;color:#fcd34d;font-size:.85em;">.mp4</code>,
+                            <code style="font-family:monospace;color:#fcd34d;font-size:.85em;">.mp3</code>, and
+                            <code style="font-family:monospace;color:#fcd34d;font-size:.85em;">.info.json</code> files for that video
+                            and specifies your destination bucket.
+                        </p>
+                        <div class="code-card">
+                            <div class="code-card-header">
+                                <span class="code-lang">JSON — pretty-printed for reference</span>
+                                <button class="copy-btn" data-target="entry-code">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                                    Copy
+                                </button>
+                            </div>
+                            <pre class="code-pre" id="entry-code">{
+  "id": "{video-id}",
+  "do": "copy-v2",
+  "doArgs": {
+    "manifest": [
+      {
+        "name": "{video-id}/{video-id}.mp4",
+        "bucket": {
+          "name": "laion-bucket",
+          "credentials": { "endpoint": "stor.grass-storage.io" }
+        }
+      },
+      {
+        "name": "{video-id}/{video-id}.mp3",
+        "bucket": {
+          "name": "laion-bucket",
+          "credentials": { "endpoint": "stor.grass-storage.io" }
+        }
+      },
+      {
+        "name": "{video-id}/{video-id}.info.json",
+        "bucket": {
+          "name": "laion-bucket",
+          "credentials": { "endpoint": "stor.grass-storage.io" }
+        }
+      }
+    ],
+    "destinations": [
+      {
+        "bucket": {
+          "name": "{your-bucket-name}",
+          "credentials": {
+            "endpoint":    "{your-endpoint}",
+            "accessKeyId": "{your-access-key-id}"
+          },
+          "options": { "includeFileNameParent": true }
+        }
+      }
+    ]
+  }
+}</pre>
+                        </div>
+
+                        <!-- Full example -->
+                        <p><strong>Full example — ready-to-use JSONL file</strong></p>
+                        <div class="step-note step-note--warn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                            Replace the example credentials and bucket details with your own before submitting.
+                        </div>
+                        <div class="code-card">
+                            <div class="code-card-header">
+                                <span class="code-lang">JSONL — laion-manifest.jsonl</span>
+                                <button class="copy-btn" data-target="full-code">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                                    Copy
+                                </button>
+                            </div>
+                            <pre class="code-pre" id="full-code">{"endpoint":"s3.storage.com","accessKeyId":"3e9375da808b3202","secretKey":"63144cc9461e335b"}
+{"id":"--Uuf_zdsTk","do":"copy-v2","doArgs":{"manifest":[{"name":"--Uuf_zdsTk/--Uuf_zdsTk.mp4","bucket":{"name":"laion-bucket","credentials":{"endpoint":"stor.grass-storage.io"}}},{"name":"--Uuf_zdsTk/--Uuf_zdsTk.mp3","bucket":{"name":"laion-bucket","credentials":{"endpoint":"stor.grass-storage.io"}}},{"name":"--Uuf_zdsTk/--Uuf_zdsTk.info.json","bucket":{"name":"laion-bucket","credentials":{"endpoint":"stor.grass-storage.io"}}}],"destinations":[{"bucket":{"name":"laion","credentials":{"endpoint":"s3.storage.com","accessKeyId":"3e9375da808b3202"},"options":{"includeFileNameParent":true}}}]}}
+{"id":"--U3b95ZhXE","do":"copy-v2","doArgs":{"manifest":[{"name":"--U3b95ZhXE/--U3b95ZhXE.mp4","bucket":{"name":"laion-bucket","credentials":{"endpoint":"stor.grass-storage.io"}}},{"name":"--U3b95ZhXE/--U3b95ZhXE.mp3","bucket":{"name":"laion-bucket","credentials":{"endpoint":"stor.grass-storage.io"}}},{"name":"--U3b95ZhXE/--U3b95ZhXE.info.json","bucket":{"name":"laion-bucket","credentials":{"endpoint":"stor.grass-storage.io"}}}],"destinations":[{"bucket":{"name":"laion","credentials":{"endpoint":"s3.storage.com","accessKeyId":"3e9375da808b3202"},"options":{"includeFileNameParent":true}}}]}}</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── Step 3 ── -->
+                <div class="step-card reveal-up delay-2">
+                    <div class="step-header">
+                        <div class="step-num">3</div>
+                        <div class="step-header-text">
+                            <h3>Submit Your Manifest to GRASS</h3>
+                            <p>GRASS will process your manifest and transfer the files directly to your bucket</p>
+                        </div>
+                    </div>
+                    <div class="step-body">
+                        <p>
+                            Once your manifest file is ready, submit it to GRASS for processing. GRASS will read
+                            each entry line-by-line, copy the requested files from the LAION storage pool, and
+                            deliver them to the S3 bucket you specified. Large manifests are processed in batches;
+                            you will be notified once your transfer is complete.
+                        </p>
+                        <div class="step-note">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                            Submission instructions and the GRASS endpoint will be provided after your access request
+                            (Step&nbsp;1) is approved.
+                        </div>
+                        <div class="step-note">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                            While access to the data is free for research institutions, GRASS may request that you cover
+                            egress fees of up to&nbsp;$2.5/TB.
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /.steps-list -->
+
+        </div>
+    </main>
+
+    <!-- ── Footer ─────────────────────────────────── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-body">
+                <div class="footer-brand">
+                    <img src="logos/logo-128.png" alt="LAION BVD" class="footer-logo">
+                    <div>
+                        <div class="footer-name">LAION Big Video Dataset</div>
+                        <div class="footer-tagline">Open research for the community</div>
+                    </div>
+                </div>
+                <nav class="footer-links">
+                    <a href="#">Paper</a>
+                    <a href="download.html">Dataset</a>
+                    <a href="https://github.com/LAION-AI/BVD">GitHub</a>
+                    <a href="https://laion.ai">LAION e.V.</a>
+                    <a href="https://github.com/LAION-AI/BVD/blob/main/assets/bvd_privacy_policy.pdf" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                    <a href="https://github.com/LAION-AI/BVD/blob/main/assets/bvd_terms_of_use.pdf" target="_blank" rel="noopener noreferrer">Terms of Use</a>
+                </nav>
+            </div>
+            <div class="footer-rule">
+                <span>&copy; 2026 LAION e.V. Released under open access for the research community.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Copy buttons for all code blocks
+        document.querySelectorAll('.copy-btn[data-target]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const pre = document.getElementById(btn.dataset.target);
+                if (!pre) return;
+                navigator.clipboard.writeText(pre.textContent).then(() => {
+                    btn.classList.add('copied');
+                    btn.querySelector('svg + *') ? null : null;
+                    const orig = btn.innerHTML;
+                    btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Copied`;
+                    setTimeout(() => { btn.innerHTML = orig; btn.classList.remove('copied'); }, 2000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

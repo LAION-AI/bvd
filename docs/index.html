@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <meta name="description" content="LAION Big Video Dataset - A 10-Million-Hour Open Video Dataset for Multimodal Pre-training">
+    <title>LAION Big Video Dataset</title>
+    <link rel="icon" type="image/png" href="logos/logo-128.png">
+    <link rel="apple-touch-icon" href="logos/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ── Navbar ─────────────────────────────────── -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand">
+                <img src="logos/logo-128.png" alt="LAION BVD" class="nav-logo">
+                <span class="nav-wordmark">LAION-BVD</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#abstract"  class="nav-link">Abstract</a></li>
+                <li><a href="#scale"   class="nav-link">Scale</a></li>
+                <!-- <li><a href="#statistics" class="nav-link">Statistics</a></li> -->
+                <li><a href="#results"   class="nav-link">Results</a></li>
+                <li><a href="#ethics"    class="nav-link">Ethics</a></li>
+                <li><a href="#citation"  class="nav-link">Citation</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-ghost">Paper</a>
+                <a href="download.html" class="btn btn-primary">Dataset&nbsp;↓</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ── Hero ───────────────────────────────────── -->
+    <section class="hero" id="hero">
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+
+            <div class="hero-badge reveal-fade">Open Research Dataset</div>
+
+            <!-- <div class="hero-banner-wrap reveal-up">
+                <img src="banner.png" alt="LAION Big Video Dataset" class="hero-banner">
+            </div> -->
+
+            <h1 class="hero-title reveal-up">LAION Big Video Dataset</h1>
+
+            <!-- <p class="hero-subtitle reveal-up delay-2">
+                A 10-Million-Hour Open Web Video Corpus for<br>
+                Video, Audio, and Image-Text Pre-training
+            </p> -->
+
+            <div class="hero-authors reveal-up delay-1">
+                <div class="authors-list">
+                    <span class="author">Andreas Hochlehnert<sup>1,*</sup></span>
+                    <span class="author-sep">&middot;</span>
+                    <span class="author">Marianna Nezhurina<sup>2,3,*</sup></span>
+                    <span class="author-sep">&middot;</span>
+                    <span class="author">Mehdi Cherti<sup>2,3</sup></span>
+                    <span class="author-sep">&middot;</span>
+                    <span class="author">Andrej Radonjic<sup>4</sup></span>
+                    <span class="author-sep">&middot;</span>
+                    <span class="author">Thaddäus Wiedemer<sup>5,1</sup></span>
+                    <span class="author-sep">&middot;</span>
+                    <span class="author">Christoph Schuhmann<sup>2</sup></span>
+                    <span class="author-sep">&middot;</span>
+                    <span class="author">Romain Beaumont<sup>2</sup></span>
+                    <span class="author-sep">&middot;</span>
+                    <span class="author">Wieland Brendel<sup>5</sup></span>
+                    <span class="author-sep">&middot;</span>
+                    <span class="author">Bernhard Schölkopf<sup>5</sup></span>
+                    <span class="author-sep">&middot;</span>
+                    <span class="author">A. Sophia Koepke<sup>1,6,◇</sup></span>
+                    <span class="author-sep">&middot;</span>
+                    <span class="author">Jenia Jitsev<sup>2,3,◇</sup></span>
+                    <span class="author-sep">&middot;</span>
+                    <span class="author">Matthias Bethge<sup>1,◇</sup></span>
+                </div>
+                <!-- <div class="authors-note">
+                    <span><sup>*</sup>Shared first authors</span>
+                    <span class="authors-note-sep">&ensp;&bull;&ensp;</span>
+                    <span><sup>◇</sup>Shared last authors</span>
+                </div>
+                <div class="authors-affils">
+                    <span><sup>1</sup>Tübingen AI Center, University of Tübingen</span>
+                    <span><sup>2</sup>LAION</span>
+                    <span><sup>3</sup>JSC, FZJ</span>
+                    <span><sup>4</sup>GRASS</span>
+                    <span><sup>5</sup>MPI for Intelligent Systems, ELLIS Institute Tübingen</span>
+                    <span><sup>6</sup>MCML, Technical University Munich</span>
+                </div> -->
+            </div>
+
+            <!-- <div class="hero-animated reveal-up delay-5" aria-live="polite">
+                <span class="anim-static">A dataset for</span>
+                <span class="anim-phrase" id="animPhrase">models that see</span>
+            </div> -->
+
+            <div class="hero-cta reveal-up delay-2">
+                <a href="#" class="btn btn-primary btn-lg">
+                    <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    Read Paper
+                </a>
+                <a href="download.html" class="btn btn-outline btn-lg">
+                    <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Download Dataset
+                </a>
+                <a href="https://github.com/LAION-AI/BVD" class="btn btn-ghost btn-lg">
+                    <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub
+                </a>
+            </div>
+
+        </div>
+        <a href="#scale" class="scroll-cue" aria-label="Scroll down">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+    </section>
+
+    <!-- ── Affiliations ──────────────────────────── -->
+    <div class="affil-strip">
+        <div class="container">
+            <div class="authors-note">
+                <span><sup>*</sup>Shared first authors</span>
+                <span class="authors-note-sep">&ensp;&bull;&ensp;</span>
+                <span><sup>◇</sup>Shared last authors</span>
+            </div>
+            <div class="authors-affils" style="margin-bottom: 40px;">
+                <span><sup>1</sup>Tübingen AI Center, University of Tübingen</span>
+                <span><sup>2</sup>LAION</span>
+                <span><sup>3</sup>JSC, FZJ</span>
+                <span><sup>4</sup>Wynd Labs</span>
+                <span><sup>5</sup>MPI for Intelligent Systems, ELLIS Institute Tübingen</span>
+                <span><sup>6</sup>MCML, Technical University Munich</span>
+            </div>
+            <p class="affil-label">Affiliated Institutions</p>
+            <div class="affil-logos">
+                <a href="https://tuebingen.ai/" target="_blank" rel="noopener noreferrer"><img src="logos/logo-tueai.svg"                alt="Tübingen AI Center"      class="affil-logo"></a>
+                <a href="https://uni-tuebingen.de/en/" target="_blank" rel="noopener noreferrer"><img src="logos/logo-uni-tue-red.svg"          alt="University of Tübingen"  class="affil-logo"></a>
+                <!-- <img src="logos/laion-logo.svg"                alt="LAION"                   class="affil-logo affil-logo--color"> -->
+                <a href="https://www.fz-juelich.de/en" target="_blank" rel="noopener noreferrer"><img src="logos/fz-juelich.svg"                alt="Forschungszentrum Jülich" class="affil-logo"></a>
+                <!-- <img src="logos/grass-horizontal-logo.svg"     alt="GRASS"                   class="affil-logo"> -->
+                <a href="https://is.mpg.de/en/" target="_blank" rel="noopener noreferrer"><img src="logos/logo-mpi-is-en-green.svg"      alt="MPI for Intelligent Systems" class="affil-logo"></a>
+                <a href="https://mcml.ai/" target="_blank" rel="noopener noreferrer"><img src="logos/MCML_Logo_os.png"              alt="MCML"                    class="affil-logo"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── Abstract ───────────────────────────────── -->
+    <section class="abstract-section" id="abstract">
+        <div class="container">
+            <p class="section-eyebrow">Overview</p>
+            <h2 class="section-title">Abstract</h2>
+
+            <div class="abstract-card reveal-up">
+                <p>
+                    We present <strong>LAION-BVD</strong> (LAION &mdash; Big Video Dataset), a large-scale open video dataset for multimodal learning, containing <em>1.3B platform-specific video URLs</em> collected from CommonCrawl. From these, we download 80M videos with a total duration of <em>10 million hours</em>. The dataset is designed for multimodal pre-training across video, audio, and image modalities.
+                    Using content-aware scene detection we extract clips for which we synthetically generate video and audio captions. Models trained on these data achieve competitive performance on standard video-text and audio-text benchmarks, with consistent improvements as training or model scale increases.
+                    Additionally, we explore video frames as a new source of image-text data by extracting scene-changing frames. These frames exhibit a visual distribution distinct from standard web image corpora, and models trained on this dataset achieve strong image-text retrieval performance.
+                    Overall, LAION-BVD significantly expands open access to multimodal videos at unprecedented scale and will be released to the research community for multimodal research.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Stats ──────────────────────────────────── -->
+    <section class="stats-section" id="scale">
+        <div class="container">
+            <p class="section-eyebrow">By the Numbers</p>
+            <h2 class="section-title">Unprecedented Scale</h2>
+            <p class="section-desc">The largest openly accessible video corpus for multimodal learning research</p>
+
+            <div class="stats-grid">
+                <div class="stat-card reveal-up">
+                    <div class="stat-emoji">🔗</div>
+                    <div class="stat-number" data-val="1.3" data-dec="1" data-suffix="B">0</div>
+                    <div class="stat-label">Video URLs</div>
+                    <p class="stat-desc">Platform-specific URLs collected from Common Crawl</p>
+                </div>
+                <div class="stat-card reveal-up delay-1">
+                    <div class="stat-emoji">🎬</div>
+                    <div class="stat-number" data-val="80" data-suffix="M">0</div>
+                    <div class="stat-label">Downloaded Videos</div>
+                    <p class="stat-desc">Successfully downloaded and processed videos</p>
+                </div>
+                <div class="stat-card reveal-up delay-2">
+                    <div class="stat-emoji">⏱️</div>
+                    <div class="stat-number" data-val="10" data-suffix="M hrs">0</div>
+                    <div class="stat-label">Total Duration</div>
+                    <p class="stat-desc">Combined video content across all downloads</p>
+                </div>
+                <div class="stat-card reveal-up delay-3">
+                    <div class="stat-emoji">✂️</div>
+                    <div class="stat-number" data-val="55" data-suffix="M">0</div>
+                    <div class="stat-label">Annotated Clips</div>
+                    <p class="stat-desc">Clips with generated video and audio captions</p>
+                </div>
+                <div class="stat-card reveal-up delay-4">
+                    <div class="stat-emoji">🖼️</div>
+                    <div class="stat-number" data-val="300" data-suffix="M">0</div>
+                    <div class="stat-label">Extracted Frames</div>
+                    <p class="stat-desc">Video frames for image-text pre-training</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ── Dataset Statistics ────────────────────── -->
+    <!-- 
+    <section class="abstract-section" id="statistics">
+        <div class="container">
+            <p class="section-eyebrow">Dataset</p>
+            <h2 class="section-title">Dataset Statistics</h2>
+            <div class="reveal-up" style="text-align:center; margin-top:2rem;">
+                <img src="images/stats_inverted.svg" alt="LAION-BVD dataset statistics" style="max-width:100%; height:auto;">
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ── Features ───────────────────────────────── -->
+    <section class="features-section" id="results">
+        <div class="container">
+            <p class="section-eyebrow">Benchmarks</p>
+            <h2 class="section-title">Experimental Results</h2>
+            <p class="section-desc">Models trained on LAION-BVD achieve competitive performance across video, audio, and image-text benchmarks</p>
+
+            <div class="features-grid">
+
+                <div class="feature-card reveal-up">
+                    <div class="feature-top">
+                        <div class="feature-icon feat-video">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                        </div>
+                        <span class="feature-tag">ViCLIP</span>
+                    </div>
+                    <h3>Video-Language Benchmarks</h3>
+                    <p>ViCLIP models trained on LAION-BVD match or exceed InternVid-trained models by up to 2.1% on standard video-text benchmarks, with consistent improvements as training scale grows from 10M to 50M clips.</p>
+                    <ul class="feature-bullets">
+                        <li>Up to +2.1% over InternVid (FLT) baseline</li>
+                        <li>Consistent gains across 10M-50M clips</li>
+                        <li>55M clips with synthetic video captions</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card reveal-up delay-1">
+                    <div class="feature-top">
+                        <div class="feature-icon feat-audio">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                        </div>
+                        <span class="feature-tag">CLAP</span>
+                    </div>
+                    <h3>Audio-Language Benchmarks</h3>
+                    <p>CLAP models trained on LAION-BVD achieve competitive performance against other large-scale uncurated audio datasets, leveraging rich in-the-wild soundscapes extracted directly from video.</p>
+                    <ul class="feature-bullets">
+                        <li>Competitive with uncurated audio datasets</li>
+                        <li>Audio-text pairs from diverse video</li>
+                        <li>Good scaling trends on when increasing model and data scale</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card reveal-up delay-2">
+                    <div class="feature-top">
+                        <div class="feature-icon feat-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        </div>
+                        <span class="feature-tag">CLIP</span>
+                    </div>
+                    <h3>Image-Text Benchmarks</h3>
+                    <p>Frame-based CLIP models achieve strong image-text retrieval performance on standard benchmarks. Video frames exhibit a visual distribution distinct from typical web corpora, complementing existing image pre-training sources.</p>
+                    <ul class="feature-bullets">
+                        <li>Strong retrieval on standard benchmarks</li>
+                        <li>300M frames with unique visual distribution</li>
+                        <li>Complements standard web image datasets</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Ethics ────────────────────────────────── -->
+    <section class="abstract-section" id="ethics">
+        <div class="container">
+            <p class="section-eyebrow">Responsible Use</p>
+            <h2 class="section-title">Ethics &amp; Release Statement</h2>
+
+            <div class="abstract-card reveal-up">
+                <p>
+                    LAION-BVD is released to support open and reproducible multimodal research at scale. Large-scale video datasets and the models trained on them are increasingly concentrated within a small number of predominantly US-based technology companies, limiting independent scientific investigation and reproducibility. By providing an open resource for academic research, we aim to broaden access to multimodal training data and enable more transparent evaluation of large-scale video, audio, and image models.
+                </p>
+                <p style="margin-top: 1rem;">
+                    LAION-BVD is released <em>exclusively for research purposes and not for commercial use</em>. The dataset is intended to support scientific research, reproducibility, safety analysis, and the study of multimodal foundation models and related systems. We encourage users to respect the rights and copyright of content creators and to use the dataset responsibly and in accordance with applicable laws and platform terms.
+                </p>
+                <p style="margin-top: 1rem;">
+                    Like other large-scale web datasets, LAION-BVD may contain biases, stereotypes, and uneven representation across languages, regions, and topics. Models trained on this data may inherit such biases. Researchers using the dataset should be aware of these limitations and, where relevant, evaluate and report them alongside model capabilities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Citation ───────────────────────────────── -->
+    <section class="citation-section" id="citation">
+        <div class="container">
+            <p class="section-eyebrow">Reference</p>
+            <h2 class="section-title">Citation</h2>
+
+            <div class="citation-card reveal-up">
+                <div class="citation-header">
+                    <span class="citation-lang">BibTeX</span>
+                    <button class="copy-btn" id="copyBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                        Copy
+                    </button>
+                </div>
+                <pre class="citation-pre" id="citationCode">@misc{laionbvd2026,
+  title     = {LAION-BVD: A 10-Million-Hour Open Video Dataset for Multimodal Pre-training},
+  author    = {Andreas Hochlehnert and Marianna Nezhurina and Mehdi Cherti and
+               Andrej Radonjic and Thaddäus Wiedemer and Christoph Schuhmann and
+               Romain Beaumont and Wieland Brendel and Bernhard Schölkopf and
+               A. Sophia Koepke and Jenia Jitsev and Matthias Bethge},
+  year      = {2026},
+  url       = {https://laion-ai.github.io/bvd}
+}</pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Footer ─────────────────────────────────── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-body">
+                <div class="footer-brand">
+                    <img src="logos/logo-128.png" alt="LAION BVD" class="footer-logo">
+                    <div>
+                        <div class="footer-name">LAION Big Video Dataset</div>
+                        <div class="footer-tagline">Open research for the community</div>
+                    </div>
+                </div>
+                <nav class="footer-links">
+                    <a href="#">Paper</a>
+                    <a href="download.html">Dataset</a>
+                    <a href="https://github.com/LAION-AI/BVD">GitHub</a>
+                    <a href="https://laion.ai">LAION e.V.</a>
+                    <a href="https://github.com/LAION-AI/BVD/blob/main/assets/bvd_privacy_policy.pdf" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                    <a href="https://github.com/LAION-AI/BVD/blob/main/assets/bvd_terms_of_use.pdf" target="_blank" rel="noopener noreferrer">Terms of Use</a>
+                </nav>
+            </div>
+            <div class="footer-rule">
+                <span>&copy; 2026 LAION e.V.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

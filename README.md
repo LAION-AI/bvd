@@ -42,7 +42,7 @@ The full pipeline covers the workflow from raw data to training-ready format:
 
 ## Ethics & Release Statement
 
-LAION-BVD is released to support open and reproducible multimodal research at scale. Large-scale video datasets and the models trained on them are increasingly concentrated within a small number of predominantly US-based technology companies, limiting independent scientific investigation and reproducibility. By providing an open resource for academic research, we aim to broaden access to multimodal training data and enable more transparent evaluation of large-scale video, audio, and image models.
+LAION-BVD is released to support open and reproducible multimodal research at scale. Large-scale video datasets and the models trained on them are increasingly concentrated within a small number proprietary technology companies, limiting independent scientific investigation and reproducibility. By providing an open resource for academic research, we aim to broaden access to multimodal training data and enable more transparent evaluation of large-scale video, audio, and image models.
 
 LAION-BVD is released **exclusively for research purposes and not for commercial use**. The dataset is intended to support scientific research, reproducibility, safety analysis, and the study of multimodal foundation models and related systems. We encourage users to respect the rights and copyright of content creators and to use the dataset responsibly and in accordance with applicable laws and platform terms.
 

@@ -25,7 +25,7 @@ We release LAION-BVD to the research community. It significantly expands open ac
 
 ## Results
 
-**Video-Language (ViCLIP):** ViCLIP models trained on LAION-BVD match or exceed InternVid-trained models by up to 4.4% on standard video-text benchmarks, with consistent improvements as training scale grows from 10M to 50M clips.
+**Video-Language (ViCLIP):** ViCLIP models trained on LAION-BVD match or exceed InternVid-trained models by up to 2.1% on standard video-text benchmarks, with consistent improvements as training scale grows from 10M to 50M clips.
 
 **Audio-Language (CLAP):** CLAP models trained on LAION-BVD achieve competitive performance against other large-scale uncurated audio datasets, leveraging rich in-the-wild soundscapes extracted directly from video.
 

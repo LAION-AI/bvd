@@ -2,16 +2,16 @@
 
 **A 10-Million-Hour Open Video Dataset for Multimodal Pre-training**
 
-Project Page (coming soon) · Paper (coming soon) · Download (coming soon) · [GitHub](https://github.com/laion-ai/bvd)
+[Project Page](https://projects.laion.ai/bvd/) · Paper (coming soon) · [Download](https://projects.laion.ai/bvd/download.html) · [GitHub](https://github.com/laion-ai/bvd)
 
 
 ## Abstract
 
 We present **LAION-BVD** (LAION - Big Video Dataset), a large-scale open video dataset for multimodal learning, containing *1.3B platform-specific video URLs* collected from CommonCrawl. From these, we download 80M videos with a total duration of *10 million hours*. The dataset is designed for multimodal pre-training across video, audio, and image modalities.
 
-Using content-aware scene detection we extract clips for which we synthetically generate video and audio captions. Models trained on these data achieve competitive performance on standard video-text and audio-text benchmarks, with consistent improvements as training or model scale increases. Additionally, we explore video frames as a new source of image-text data by extracting scene-changing frames. These frames exhibit a visual distribution distinct from standard web image corpora, and models trained on this dataset achieve strong image-text retrieval performance.
+Using content-aware scene detection, we extract clips for which we synthetically generate video and audio captions. Models trained on these data achieve competitive performance on standard video-text and audio-text benchmarks, with consistent improvements as training or model scale increases. Additionally, we explore video frames as an alternative source of image-text data by extracting scene-changing frames. These frames exhibit a visual distribution distinct from standard web image corpora, and models trained on this dataset achieve strong image-text retrieval performance.
 
-Overall, LAION-BVD significantly expands open access to multimodal videos at unprecedented scale and is released to the research community for multimodal research.
+We release LAION-BVD to the research community. It significantly expands open access to multimodal videos at an unprecedented scale.
 
 ## Scale
 

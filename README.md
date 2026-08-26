@@ -47,3 +47,18 @@ LAION-BVD is released to support open and reproducible multimodal research at sc
 LAION-BVD is released **exclusively for research purposes and not for commercial use**. The dataset is intended to support scientific research, reproducibility, safety analysis, and the study of multimodal foundation models and related systems. We encourage users to respect the rights and copyright of content creators and to use the dataset responsibly and in accordance with applicable laws and platform terms.
 
 Like other large-scale web datasets, LAION-BVD may contain biases, stereotypes, and uneven representation across languages, regions, and topics. Models trained on this data may inherit such biases. Researchers using the dataset should be aware of these limitations and, where relevant, evaluate and report them alongside model capabilities.
+
+
+## Citation
+
+```bibtex
+@misc{laionbvd2026,
+    title={LAION-BVD: A 10-Million-Hour Open Video Dataset for Multimodal Pre-training}, 
+    author={Andreas Hochlehnert and Marianna Nezhurina and Mehdi Cherti and Andrej Radonjic and Thaddäus Wiedemer and Christoph Schuhmann and Romain Beaumont and Wieland Brendel and Bernhard Schölkopf and A. Sophia Koepke and Jenia Jitsev and Matthias Bethge},
+    year={2026},
+    eprint={2608.24845},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV},
+    url={https://arxiv.org/abs/2608.24845}, 
+}
+```

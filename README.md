@@ -2,7 +2,7 @@
 
 **A 10-Million-Hour Open Video Dataset for Multimodal Pre-training**
 
-[Project Page](https://projects.laion.ai/bvd/) · Paper (coming soon) · [Download](https://projects.laion.ai/bvd/download.html) · [GitHub](https://github.com/laion-ai/bvd)
+[Project Page](https://projects.laion.ai/bvd/) · [Paper](https://arxiv.org/abs/2608.24845) · [Download](https://projects.laion.ai/bvd/download.html) · [GitHub](https://github.com/laion-ai/bvd)
 
 
 ## Abstract

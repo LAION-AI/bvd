@@ -1,13 +1,13 @@
 # LAION Big Video Dataset
 
-**A 10-Million-Hour Open Video Dataset for Multimodal Pre-training**
+**A 13-Million-Hour Open Video Dataset for Multimodal Pre-training**
 
 [Project Page](https://projects.laion.ai/bvd/) · [Paper](https://arxiv.org/abs/2608.24845) · [Download](https://projects.laion.ai/bvd/download.html) · [GitHub](https://github.com/laion-ai/bvd)
 
 
 ## Abstract
 
-We present **LAION-BVD** (LAION - Big Video Dataset), a large-scale open video dataset for multimodal learning, containing *1.3B platform-specific video URLs* collected from CommonCrawl. From these, we download 80M videos with a total duration of *10 million hours*. The dataset is designed for multimodal pre-training across video, audio, and image modalities.
+We present **LAION-BVD** (LAION - Big Video Dataset), a large-scale open video dataset for multimodal learning, which contains *1.3B platform-specific video URLs* collected from CommonCrawl. From these, we download 80M videos with a total duration of *13.5 million hours*. The dataset is designed for multimodal pre-training across the video, audio, and image modalities.
 
 Using content-aware scene detection, we extract clips for which we synthetically generate video and audio captions. Models trained on these data achieve competitive performance on standard video-text and audio-text benchmarks, with consistent improvements as training or model scale increases. Additionally, we explore video frames as an alternative source of image-text data by extracting scene-changing frames. These frames exhibit a visual distribution distinct from standard web image corpora, and models trained on this dataset achieve strong image-text retrieval performance.
 
@@ -19,7 +19,7 @@ We release LAION-BVD to the research community. It significantly expands open ac
 |---|---|
 | Video URLs | 1.3B |
 | Downloaded Videos | 80M |
-| Total Duration | 10M hours |
+| Total Duration | 13.5M hours |
 | Annotated Clips | 55M |
 | Extracted Frames | 300M |
 
@@ -53,7 +53,7 @@ Like other large-scale web datasets, LAION-BVD may contain biases, stereotypes, 
 
 ```bibtex
 @misc{laionbvd2026,
-    title={LAION-BVD: A 10-Million-Hour Open Video Dataset for Multimodal Pre-training}, 
+    title={LAION-BVD: A 13-Million-Hour Open Video Dataset for Multimodal Pre-training}, 
     author={Andreas Hochlehnert and Marianna Nezhurina and Mehdi Cherti and Andrej Radonjic and Thaddäus Wiedemer and Christoph Schuhmann and Romain Beaumont and Wieland Brendel and Bernhard Schölkopf and A. Sophia Koepke and Jenia Jitsev and Matthias Bethge},
     year={2026},
     eprint={2608.24845},
